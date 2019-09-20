@@ -1,5 +1,5 @@
 node {
-  stage (checkout) {
+  stage ('checkout') {
     echo 'git checkout'
   }
 }
