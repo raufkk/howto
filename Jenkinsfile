@@ -9,7 +9,7 @@ node {
 
   stage ('test') {
 
-    echo 'branch is : $env.BRANCH_NAME'
+    echo 'branch is : ${BRANCH_NAME}'
     echo 'git commit is : $env.CHANGE_ID'
   }
 }
