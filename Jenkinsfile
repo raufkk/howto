@@ -9,7 +9,11 @@ node {
 
   stage ('test') {
 
-    echo 'branch is : ${BRANCH_NAME}'
-    echo 'git commit is : $env.CHANGE_ID'
+    if (env.BRANCH_NAME == 'master') {
+    echo 'this is master branch'
+    }
+    else {
+    echo 'this is not master branch'
+    }
   }
 }
