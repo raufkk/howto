@@ -6,4 +6,9 @@ node {
   stage ('build') {
     echo 'build done. proceeding'
   }
+
+  stage ('test') {
+
+    echo 'Testing will be done'
+  }
 }
